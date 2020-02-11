@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vh;
+}
+
+.left {
+  margin: 50px 20px 50px 50px;
+}
+.img {
+  height: 20px;
+}
+
+.right {
+  text-align: center;
+  margin-top: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.num {
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 20px 15px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.form {
+}
