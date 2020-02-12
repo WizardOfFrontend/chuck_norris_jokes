@@ -1,3 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
 
+.left {
+  margin: 50px 0 50px 50px;
+}
+
+.right {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.title {
+  font-size: 4rem;
+  margin: 50px;
+}
+
+label {
+  font-size: 3rem;
+  display: block;
+}
+
+input {
+  font-size: 3rem;
+}
+
+.btn {
+  padding: 20px 15px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.output {
+  font-size: 1.5rem;
+  margin: 50px 0 0 50px;
+}
+
+@media (max-width: 1260px) {
+  .grid-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    text-align: center;
+    margin: 0;
+  }
+
+  .right {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 935px) {
+  .title {
+    font-size: 3rem;
+  }
+  label,
+  input {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 649px) {
+  img {
+    display: none;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  label,
+  input {
+    font-size: 1.5rem;
+  }
+}
