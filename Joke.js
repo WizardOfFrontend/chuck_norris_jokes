@@ -4,7 +4,7 @@ function getJokes(e) {
   e.preventDefault()
   const num = document.querySelector('input[type="number"]').value;
 
-  fetch(`http://api.icndb.com/jokes/random/${num}`)
+  fetch(`https://api.icndb.com/jokes/random/${num}`)
     .then(res => res.json())
     .then(data => {
       let output = "";
